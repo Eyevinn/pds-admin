@@ -6,8 +6,6 @@
   Administer your self-hosted Bluesky Personal Data Server
   <br />
   <br />
-  :book: <b><a href="https://eyevinn.github.io/{{repo-name}}/">Read the documentation (github pages)</a></b> :eyes:
-  <br />
 </div>
 
 <div align="center">
