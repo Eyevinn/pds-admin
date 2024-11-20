@@ -9,8 +9,7 @@ WORKDIR /app
 # Install dependencies based on the preferred package manager
 COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
 # Uncomment the line below if you need to use patch-package again
-RUN --mount=type=secret,id=npmrc,target=/root/.npmrc \
-  npm ci;
+RUN npm ci
 
 
 # Rebuild the source code only when needed

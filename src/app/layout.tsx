@@ -1,6 +1,12 @@
 import { Providers } from './providers';
 
 import './globals.css';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'PDS Admin',
+  description: 'Adminstration user interface for PDS'
+};
 
 export default async function RootLayout({
   children
