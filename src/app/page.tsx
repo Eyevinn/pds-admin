@@ -1,9 +1,5 @@
-import HelloWorld from '../components/hello/HelloWorld';
+import { redirect } from 'next/navigation';
 
 export default function Page() {
-  return (
-    <main className="flex justify-center items-center w-screen h-screen">
-      <HelloWorld />
-    </main>
-  );
+  redirect('/dashboard/accounts');
 }

@@ -1,9 +1,9 @@
 <h1 align="center">
-  Project Name or Logo
+  Bluesky Personal Data Server Admin
 </h1>
 
 <div align="center">
-  project name - quick salespitch why this is awesome. 
+  Administer your self-hosted Bluesky Personal Data Server
   <br />
   <br />
   :book: <b><a href="https://eyevinn.github.io/{{repo-name}}/">Read the documentation (github pages)</a></b> :eyes:
@@ -13,29 +13,38 @@
 <div align="center">
 <br />
 
-[![npm](https://img.shields.io/npm/v/@eyevinn/{{repo-name}}?style=flat-square)](https://www.npmjs.com/package/@eyevinn/{{repo-name}})
-[![github release](https://img.shields.io/github/v/release/Eyevinn/{{repo-name}}?style=flat-square)](https://github.com/Eyevinn/{{repo-name}}/releases)
-[![license](https://img.shields.io/github/license/eyevinn/{{repo-name}}.svg?style=flat-square)](LICENSE)
-
-[![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/eyevinn/{{repo-name}}/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/Eyevinn/pds-admin/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 [![made with hearth by Eyevinn](https://img.shields.io/badge/made%20with%20%E2%99%A5%20by-Eyevinn-59cbe8.svg?style=flat-square)](https://github.com/eyevinn)
 [![Slack](http://slack.streamingtech.se/badge.svg)](http://slack.streamingtech.se)
 
 </div>
 
-<!-- Add a description of the project here -->
-
 ## Requirements
 
-<!--Add any external project dependencies such as node.js version etc here -->
+- Personal Data Server
 
 ## Installation / Usage
 
-<!--Add clear instructions on how to use the project here -->
+Run locally
+
+```
+% npm install
+% npm run build
+```
+
+Provide URL to PDS with the environment variable `PDS_URL`
+
+```
+% PDS_URL=https://USER:PASSWORD@HOSTNAME npm start
+```
+
+Web application is now available at `http://localhost:3000`
 
 ## Development
 
-<!--Add clear instructions on how to start development of the project here -->
+```
+% PDS_URL=https://USER:PASSWORD@HOSTNAME npm run dev
+```
 
 ## Contributing
 
